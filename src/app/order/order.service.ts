@@ -9,6 +9,10 @@ export class OrderService {
 
     }
 
+    itemsValue(): number {
+        return this.shoppingCartService.total();
+    }
+
     cartItems(): CartItem[] {
         return this.shoppingCartService.items;
     }
